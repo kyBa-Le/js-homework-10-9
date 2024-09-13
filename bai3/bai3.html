@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes</title>
+    <link rel="stylesheet" href="bai3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Clothes</h1>
+        <form action="">
+            <label for="" >
+                <div>Product Name</div>
+                <input type="text" id="pname">
+            </label>
+            <label for="">
+                <div>Product Quantity</div>
+                <input type="text" id="qty">
+            </label>
+            <label for="">
+                <div>Product Price</div>
+                <input type="text" id="pp">
+            </label>
+            <button type="button" onclick="Add()">Add</button>
+        </form> 
+        <table id="table">
+            <tr>
+                <th>No</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Sub Total</th>
+            </tr>
+            <tr id="last-row" style="border-bottom: 0;">
+                <td colspan="4" style="text-align: left;">Total</td>
+                <td id="total">0</td>
+            </tr>
+        </table>
+    </div>
+    <script src="bai3.js"></script>
+</body>
+</html>
