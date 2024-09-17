@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Content here -->
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <div class="img-logo"></div>
+                <h1>Shop DEBUG</h1>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Men fashion</a></li>
+                    <li><a href="#">Women fashion</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <input type="text" id="h-search">
+                <button>Search</button>
+            </div>
+        </div>
+        <!-- Content -->
+        <div class="content">
+            <h1 style="text-align: center;">Women Fashion</h1>
+            <div class="product">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://i.pinimg.com/736x/a6/76/30/a6763047b6db80b498fdd2e9bc23875e.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Women Clothes - Product Code</h5>
+                        <div class="price">
+                            <p id="new-price">100000</p>
+                            <p id="old-price">200000</p>
+                        </div>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://i.pinimg.com/736x/a6/76/30/a6763047b6db80b498fdd2e9bc23875e.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Women Clothes - Product Code</h5>
+                        
+                        <div class="price">
+                            <p id="new-price">100000</p>
+                            <p id="old-price">200000</p>
+                        </div>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://i.pinimg.com/736x/a6/76/30/a6763047b6db80b498fdd2e9bc23875e.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Women Clothes - Product Code</h5>
+                        
+                        <div class="price">
+                            <p id="new-price">100000</p>
+                            <p id="old-price">200000</p>
+                        </div>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form action="" class="form">
+        <h1>Product Information</h1>
+        <label for="" id="img-p">
+            <h3>Product image</h3>
+            <input type="text" id="p-img">
+        </label>
+        <label for="">
+            <h3>Product name</h3>
+            <input type="text" id="p-name">
+        </label>
+        <label for="">
+            <h3>New Price</h3>
+            <input type="number" id="in-new-price">
+        </label>
+        <label for="">
+            <h3>Old Price</h3>
+            <input type="number" id="in-old-price">
+        </label>
+        <label for="">
+            <h3>Type</h3>
+            <input type="text" id="type">
+        </label>
+        <label for="">
+            <h3>Product Code</h3>
+            <input type="text" id="p-code">
+        </label>
+        <div>
+            <button type="button" onclick="Add()">Add</button>
+            <button type="button" onclick="Clear()">Clear</button>
+            <button type="button" onclick="Close()">Close</button>
+        </div>
+    </form>
+    <button type="button" id="b-form" onclick="openForm()" style="border-radius: 5px;">Open Form</button>
+    <script src="script.js"></script>
+</body>
+</html>
