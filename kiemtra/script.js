@@ -15,7 +15,13 @@ function Add(){
     cardBody.querySelector(".card-title").innerHTML = pname + " - " + pcode;
     cardBody.querySelector(".price").querySelector("#new-price").textContent = newPrice;
     cardBody.querySelector(".price").querySelector("#old-price").textContent = oldPrice;
-    document.querySelector(".product").appendChild(clone);
+    var productType;
+    if(type="men"){
+        productType = "men-fashion";
+    }else if(type="women"){
+        productType = "women-fashion";
+    }
+    document.getElementById(productType).querySelector(".product").appendChild(clone);
 }
 
 function Clear(){
